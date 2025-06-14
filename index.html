@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Selection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            background-color: #f5f5f5;
+        }
+
+        .quadrant {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .quadrant:nth-child(1) { background-color: #e3f2fd; }
+        .quadrant:nth-child(2) { background-color: #f3e5f5; }
+        .quadrant:nth-child(3) { background-color: #e8f5e9; }
+        .quadrant:nth-child(4) { background-color: #fff3e0; }
+
+        button {
+            padding: 24px 48px;
+            font-size: 18px;
+            font-weight: 500;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .quadrant:nth-child(1) button { background-color: #2196f3; color: white; }
+        .quadrant:nth-child(2) button { background-color: #9c27b0; color: white; }
+        .quadrant:nth-child(3) button { background-color: #4caf50; color: white; }
+        .quadrant:nth-child(4) button { background-color: #ff9800; color: white; }
+    </style>
+</head>
+<body>
+    <div class="quadrant">
+        <button onclick="window.location.href='A.html'">Pitch A</button>
+    </div>
+    <div class="quadrant">
+        <button onclick="window.location.href='B.html'">Pitch B</button>
+    </div>
+    <div class="quadrant">
+        <button onclick="window.location.href='C.html'">Pitch C</button>
+    </div>
+    <div class="quadrant">
+        <button onclick="window.location.href='D.html'">Pitch D</button>
+    </div>
+</body>
+</html>
